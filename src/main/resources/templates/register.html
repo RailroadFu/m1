@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post" action="/doReg">
+        用户名：<input type = "text" name="user_name" th:value = "${username}" checked/> <br/>
+        密码：<input type="password" name="password" th:value="${password}" checked/><br/>
+        确认密码：<input type="password" name="conf_pass" checked/><br/>
+        <input type="submit" value="提交"/><br/>
+    </form>
+    <div th:text="${flag}"></div>
+
+</body>
+</html>
